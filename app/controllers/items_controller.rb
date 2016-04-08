@@ -1,7 +1,13 @@
 class ItemsController < ApplicationController
+  before_action :find_item, only: [:show, :edit, :update, :destroy]
 
   def index
     @items = Item.all.order("created_at DESC")
+  end 
+
+  def show
+    #Need to find by id to find that specific item. I use the find_item method below.
+    #@item = Item.find(params[:id])
   end 
 
   def new
@@ -20,6 +26,10 @@ class ItemsController < ApplicationController
   end 
 
   private 
+
+    def find_item
+      @item = Item.find(params[:id])
+    end 
 
     def item_params 
       params.require(:item).permit(:title, :description)
