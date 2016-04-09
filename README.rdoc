@@ -4,4 +4,4 @@ This is a Todo list app that I am building through a Udemy course.
 
 == GEMS: 
 
-Simple Form, Bootstrap, devise
+Simple Form, Bootstrap, devise, font-awesome
