@@ -12,12 +12,13 @@ class ItemsController < ApplicationController
 
   def new
     #Responsible for the new item 
-    @item = Item.new 
+    #@item = Item.new
+    @item = current_user.items.build 
   end 
 
   def create
     #Responsible for saving
-    @item = Item.new(item_params)
+    @item = current_user.items.build(item_params)
     if @item.save 
       redirect_to root_path
     else 
