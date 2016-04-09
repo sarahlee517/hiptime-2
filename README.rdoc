@@ -1,7 +1,8 @@
 == README
 
-This is a Todo list app that I am building through a Udemy course. 
+This is a Todo list app that I am building through a Udemy course. This project is finished and as usual, per these udemy courses, I am not sure if I will upload this project. Although, it is pretty interesting having an app that I can make my own to-do lists. 
 
 == GEMS: 
 
 Simple Form, Bootstrap, devise, font-awesome
+
